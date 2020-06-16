@@ -78,7 +78,7 @@ sudo service dovecot restart
 
 ## Running example code
 
-To generate code for a new database :
+Some example python code is given here that sends email to our new domain.
 
 1.) Run: python3 smtp.py to see env variables to set
 ```console
