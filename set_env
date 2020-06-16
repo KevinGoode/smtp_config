@@ -1,0 +1,10 @@
+export SMTP_DOMAIN_NAME=
+export SMTP_USER=
+export SMTP_PASS=
+export SMTP_FROM_EMAIL_IN_ORG=
+export SMTP_TO_EMAIL_IN_ORG=
+export SMTP_TO_EMAIL_OUTSIDE_ORG=
+
+
+
+
