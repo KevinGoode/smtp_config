@@ -24,11 +24,12 @@ sudo postconf -e 'virtual_alias_maps= hash:/etc/postfix/virtual'
 sudo nano /etc/postfix/virtual
 ```
 
-| /etc/postfix/virtual |
-----|-----
-| contact@example.com sammy |
-|admin@example.com sammy
-  |
+```console
+/etc/postfix/virtual
+contact@example.com sammy
+admin@example.com sammy
+```
+
 ```console
 sudo postmap /etc/postfix/virtual
 sudo systemctl restart postfix
@@ -40,11 +41,12 @@ source /etc/profile.d/mail.sh
 sudo apt-get install s-nail
 sudo nano /etc/s-nail.rc
 ```
-| /etc/s-nail.rc |
-----|-----
-| set emptystart |
-| set folder=Maildir|
-| set record=+sent|
+```console
+/etc/s-nail.rc
+set emptystart
+set folder=Maildir
+set record=+sent
+```
 5. Initialise users email directory ~/Maildir by sending an email or manually by
 ```console
 mkdir ~/Maildir/tmp
