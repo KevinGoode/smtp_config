@@ -109,8 +109,8 @@ def getSettings():
 
 settings = getSettings()
 # These case work because we have logged in so he can use server as a relay to send
-# message outside of org. If we don't login then can only send email to somebody at
-# zippy.zapto.org
+# message outside of org. If we don't login then can only send email to somebody within
+# local organisation
 api = SmtpApi(logging, settings["SMTP_DOMAIN_NAME"], settings["SMTP_FROM_EMAIL_IN_ORG"],
                25, settings["SMTP_USER"], settings["SMTP_PASS"])
 api.send_email(settings["SMTP_TO_EMAIL_OUTSIDE_ORG"])
